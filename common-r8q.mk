@@ -27,8 +27,8 @@ $(call inherit-product, device/samsung/r8q/device.mk)
 $(call inherit-product-if-exists, vendor/samsung/media/media.mk)
 
 ifneq ($(TARGET_IS_PIXELOS),true)
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common voltage stuff
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 else
 # Inherit some common PixelOS stuff
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
@@ -40,7 +40,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 ## Device identifier. This must come after all inclusions
 ifneq ($(TARGET_IS_PIXELOS),true)
-PRODUCT_NAME := lineage_r8q
+PRODUCT_NAME := voltage_r8q
 else
 PRODUCT_NAME := custom_r8q
 endif

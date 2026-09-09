@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2024-2025 The LineageOS Project
+# Copyright (C) 2024-2026 The VoltageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-voltage
 
 # call the common setup
 $(call inherit-product, device/samsung/sm8250-common/common.mk)
